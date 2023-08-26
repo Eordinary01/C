@@ -13,8 +13,16 @@ int main(int argc, char const *argv[])
     // printf("The sum is %d\n", a+b+c);
     // return 0 ;
 
-    int a,b,c;
-    printf("Enter 3 number for multiplication a\n");
-    scanf("%d %d %d", &a, &b,&c);
-    printf("Multiplication of %d and %d and %d is %d\n ", a,b,c,(a*b*c));
+    // int a,b,c;
+    // printf("Enter 3 number for multiplication a\n");
+    // scanf("%d %d %d", &a, &b,&c);
+    // printf("Multiplication of %d and %d and %d is %d\n ", a,b,c,(a*b*c));
+
+    int a;
+    printf("Enter no to find square a\n");
+    scanf("%d", &a);
+    printf("Square of %d  is %d\n", a,(a*a) );
+    return 0;
+
+
 }
