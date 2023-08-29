@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <math.h>
 
+/*
 #define PI 3.14f
 
 int main() 
@@ -62,6 +63,33 @@ int main()
     return 0;
 
 
+}
+*/
+
+int main()
+{
+    int age;
+    printf("Enter your age\n");
+    scanf("%d", &age);
+
+    switch (age)
+    {
+    case 3:
+        printf("The age is 3");
+        break;
+    case 13:
+        printf("The age is 13");
+        break;
+    case 23:
+        printf("The age is 23");
+        break;
+    
+    default:
+    printf("Age is not 3,13 and 23");
+        break;
+    }
+
+    return 0;
 }
 
     
