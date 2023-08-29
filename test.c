@@ -48,4 +48,6 @@ int main()
     return 0;
 }
 
+// (i % 2==0 )
+
 
