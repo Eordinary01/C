@@ -6,12 +6,13 @@
 
 int main()
 {
-    int result, l, b, aot, h, x, y, z, perimeter, side, area, radius;
+    int result, l, b, aot, h, x, y, z, perimeter, side, area, radius, Volume, CSA;
 
     printf("Enter 0 if you have to find the area and peimeter of Square\n");
     printf("Enter 1 if you have to find the area and perimeter of rectangle\n");
     printf("Enter 2 if you have to find the area and perimeter of triangle\n");
     printf("Enter 3 if you have to find the area and perimeter of circle\n");
+    printf("Enter 4 if you have to find the area and volume  of sphere\n");
     printf("Please enter the number you want area and perimeter of \n");
     scanf("%d", &result);
     printf("You have entered %d as you want to find the area and perimeter of that shape \n", result);
@@ -69,10 +70,24 @@ int main()
         printf("Area of the Circle: %d\n", area);
         break;
 
-        default:
+       
+    }
+    case 4:{
+
+          int radius, Volume, CSA;
+        printf("Enter the radius of sphere \n");
+        scanf("%d", &radius);
+        Volume = 4 * PI * radius * radius * radius / 3;
+        printf("Volume of the sphere: %d\n", Volume);
+
+        CSA = 4 * PI * radius * radius;
+        printf("Area of the sphere: %d\n", CSA);
+        break;
+         default:
         printf("Select the valid number for output");
         break;
     }
+
     }
 
     return 0;
