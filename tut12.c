@@ -7,7 +7,7 @@ int main(){
 
     printf("Enter the number yow want check whether it is prime or not \n");
     scanf("%d", &n);
-    for ( i=2; i*i<n; i++){
+    for ( i=2; i*i<=n; i++){
         if(n%i==0){
             isPrime=0;
         }
