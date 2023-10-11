@@ -3,14 +3,14 @@
 int main()
 
 {
-    int i, n;
+    int  n,Sum=0;
 
-    printf("Enter the number of character \n");
+    printf("Enter the  natural number\n ");
     scanf("%d", &n);
-    for (i = 0; i < n; i++)
-    {
-        printf("ok", i, n);
-    }
+
+    Sum = (n*n + n)/2;
+    printf("Sum of first %d natural number is: %d",n,Sum);
+
 
     return 0;
 }
