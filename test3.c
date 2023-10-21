@@ -1,21 +1,39 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+#include <stdlib.h>
 
 #define PI 3.14f
 
 int main()
 {
+    int result;
+
+    // printf("Enter 0 if you have to find the area and peimeter of Square\n");
+    // printf("Enter 1 if you have to find the area and perimeter of rectangle\n");
+    // printf("Enter 2 if you have to find the area and perimeter of triangle\n");
+    // printf("Enter 3 if you have to find the area and perimeter of circle\n");
+    // printf("Enter 4 if you have to find the area and volume  of sphere\n");
+    // printf("Please enter the number you want area and perimeter of \n");
+    // scanf("%d", &result);
+    // printf("You have entered %d as you want to find the area and perimeter of that shape \n", result);
+
+    do{
     int result, l, b, aot, h, x, y, z, perimeter, side, area, radius, Volume, CSA;
 
+    printf("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n");
     printf("Enter 0 if you have to find the area and peimeter of Square\n");
     printf("Enter 1 if you have to find the area and perimeter of rectangle\n");
     printf("Enter 2 if you have to find the area and perimeter of triangle\n");
     printf("Enter 3 if you have to find the area and perimeter of circle\n");
     printf("Enter 4 if you have to find the area and volume  of sphere\n");
+    printf("Enter 5 if you want exit the program\n");
+    printf("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n");
     printf("Please enter the number you want area and perimeter of \n");
     scanf("%d", &result);
-    printf("You have entered %d as you want to find the area and perimeter of that shape \n", result);
+        
+
+    
 
     switch (result)
     {
@@ -83,12 +101,16 @@ int main()
         CSA = 4 * PI * radius * radius;
         printf("Area of the sphere: %d\n", CSA);
         break;
+    }
+    case 5:
+           exit(1);
          default:
         printf("Select the valid number for output");
         break;
-    }
 
-    }
+    } 
+
+    } while( result != 6);
 
     return 0;
 }
