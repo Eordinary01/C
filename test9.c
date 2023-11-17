@@ -8,43 +8,43 @@
 */
 
 #include<stdio.h>
-int sum (int a , int b);        /*ALL*/
+int diff /*{ sum}*/ (int a , int b);        /*ALL*/
 
 
-void printStar(int n){          /* with Argument, without return value*/
-    for( int i=0; i<n; i++){
-        printf("%c", '*');
-    }
+// void printStar(int n){          /* with Argument, without return value*/
+//     for( int i=0; i<n; i++){
+//         printf("%c", '*');
+//     }
 
-}
-void name(){                       /*Nothing*/
-    printf("Parth (The dev)");
-}
+// }
+// void name(){                       /*Nothing*/
+//     printf("Parth (The dev)");
+// }
 
 
-int inputNumber()
-{
-    int i; 
-    printf("Enter the number\n");           /*Without Argument and with return value*/
-    scanf("%d", &i);
-    return i;
-}
+// int inputNumber()
+// {
+//     int i; 
+//     printf("Enter the number\n");           /*Without Argument and with return value*/
+//     scanf("%d", &i);
+//     return i;
+// }
 
 
 
 int main() {
     int a,b,c;
-    a=9;
+    a=90;
     b=50;
-    // c=sum(a,b);
-    // printf("The sum is %d\n", c);
+    c=diff/*{sum}*/(a,b);
+    printf("The diff  is %d\n", c);  /*sum*/
 
     
     // printStar(15);
     
 
-    printf("My name is:");
-    name();
+    // printf("My name is:");
+    // name();
 
 
     // c = inputNumber();
@@ -57,8 +57,8 @@ int main() {
     
 }
 
-int sum (int a , int b) {
-    return a+b;
+int diff /*{sum}*/ (int a , int b) {
+    return a-b;   /*{return a+b}*/
 }
 
 
