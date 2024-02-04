@@ -7,12 +7,11 @@ LC1:
 	.ascii "%d\0"
 LC2:
 	.ascii "Reverse number is:%d\12\0"
-	.align 4
 LC3:
-	.ascii "The inputed number is Palindrome\0"
+	.ascii "The inputed %d is Palindrome\0"
 	.align 4
 LC4:
-	.ascii "The inputed number is not Palindrome  \0"
+	.ascii "The inputed %d is not Palindrome  \0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
