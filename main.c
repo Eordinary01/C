@@ -31,10 +31,10 @@ int main(){
     printf("Reverse number is:%d\n", reverse);
 
     if(original==reverse){
-        printf("The inputed number is Palindrome",original);
+        printf("The inputed %d is Palindrome",original);
     }
     else{
-        printf("The inputed number is not Palindrome  ", original);
+        printf("The inputed %d is not Palindrome  ", original);
     }
 
     return 0;
